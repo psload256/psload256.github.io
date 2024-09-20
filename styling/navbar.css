@@ -1,0 +1,27 @@
+nav {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    position: relative;
+    margin: 0px 20px;
+}
+
+.navbar {
+    text-decoration: none;
+    margin: auto;
+}
+
+li:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: -23px;
+    top: 44%;
+    transform: translateY(-50%);
+    color: #ebebeb;
+}
